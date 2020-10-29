@@ -1,0 +1,4 @@
+How to get language files?
+
+cd ~/.vim/spell
+wget http://ftp.vim.org/pub/vim/runtime/spell/nl.utf-8.spl
