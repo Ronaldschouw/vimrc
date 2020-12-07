@@ -96,13 +96,14 @@ syntax enable
 " LINENUMBERS {{{1 -----------------------------------------------------------
 " line numbering (autotoggle)
 " https://jeffkreeftmeijer.com/vim-number/
-set nu
-set rnu
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set number relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set number norelativenumber
-augroup END
+"set nonu
+"set nornu
+"augroup numbertoggle
+"  autocmd!
+"  autocmd BufEnter,FocusGained,InsertLeave * set number relativenumber
+"  autocmd BufLeave,FocusLost,InsertEnter   * set number norelativenumber
+"augroup END
+command  Yesnu set number relativenumber
 command  Nonu set nonumber norelativenumber
 " }}}1
 
